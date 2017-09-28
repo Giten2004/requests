@@ -59,11 +59,20 @@ def request(method, url, **kwargs):
 
 
 def get(url, params=None, **kwargs):
+    # What exactly do “u” and “r” string flags do, and what are raw string literals?
+    # https://stackoverflow.com/questions/2081640/what-exactly-do-u-and-r-string-flags-do-and-what-are-raw-string-literals
     r"""Sends a GET request.
-
-    :param url: URL for the new :class:`Request` object.
-    :param params: (optional) Dictionary or bytes to be sent in the query string for the :class:`Request`.
-    :param \*\*kwargs: Optional arguments that ``request`` takes.
+    
+    Parameters
+    ------
+    url: 
+            URL for the new :class:`Request` object.
+    params: 
+            (optional) Dictionary or bytes to be sent in the query string for the :class:`Request`.
+    \*\*kwargs: 
+            Optional arguments that ``request`` takes.
+    return
+    -------
     :return: :class:`Response <Response>` object
     :rtype: requests.Response
     """
