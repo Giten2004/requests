@@ -82,6 +82,9 @@ class MockRequest(object):
     def get_new_headers(self):
         return self._new_headers
 
+    """
+    https://www.python-course.eu/python3_properties.php
+    """
     @property
     def unverifiable(self):
         return self.is_unverifiable()
